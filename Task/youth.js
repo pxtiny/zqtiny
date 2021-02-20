@@ -593,7 +593,7 @@ function readArticle() {
               //$.log(readres.items.max_notice)
            }
          } catch(e) {
-          $.logErr(e+resp);
+          $.logErr(e);
         } finally {
           resolve()
         }
