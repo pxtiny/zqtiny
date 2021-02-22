@@ -82,10 +82,19 @@ if ($.isNode()) {
 function GainStart() {
     return new Promise((resolve, reject) => {
        let url = {
-            url: `https://ios.baertt.com/v5/task/browse_start.json`,
+            url: `https://kandian.youth.cn/v5/task/browse_start.json`,
             headers: {
-            'User-Agent': 'KDApp/1.7.8 (iPhone; iOS 14.0; Scale/3.00)',
-            'Content-Type': 'application/x-www-form-urlencoded'
+             'access':'WIFI',
+            'os-api': '26',
+            'device-platform': 'android',
+            'openudid': '83bcb1d7cab0195e',
+            'app-version': '2.4.3',
+            'Content-Type': 'application/x-www-form-urlencoded',
+            'Content-Length': '1550',
+            'Host': 'kandian.youth.cn',
+            'Connection': 'Keep-Alive',
+            'Accept-Encoding': 'gzip',
+            'User-Agent': 'okhttp/3.12.2'
             },
             body: gainStartbody
         };
@@ -107,10 +116,19 @@ function GainStart() {
 function GainEnd() {
     return new Promise((resolve, reject) => {
        let url = {
-            url: `https://ios.baertt.com/v5/task/browse_end.json`,
+            url: `https://kandian.youth.cn/v5/task/browse_end.json`,
             headers: {
-            'User-Agent': 'KDApp/1.7.8 (iPhone; iOS 14.0; Scale/3.00)',
-            'Content-Type': 'application/x-www-form-urlencoded'
+             'access':'WIFI',
+            'os-api': '26',
+            'device-platform': 'android',
+            'openudid': '83bcb1d7cab0195e',
+            'app-version': '2.4.3',
+            'Content-Type': 'application/x-www-form-urlencoded',
+            'Content-Length': '1549',
+            'Host': 'kandian.youth.cn',
+            'Connection': 'Keep-Alive',
+            'Accept-Encoding': 'gzip',
+            'User-Agent': 'okhttp/3.12.2'
             },
             body: gainEndbody
          };
