@@ -44,10 +44,8 @@ if (!$.isNode() && !lookbodys.indexOf("&") == -1) {
   if ($.isNode()) {
     if (process.env.YOUTH_START && process.env.YOUTH_START.indexOf('&') > -1) {
       StartBody = process.env.YOUTH_START.split('&');
-    } else {
-      StartBody = [process.env.YOUTH_START]
-    };
-    else if (process.env.YOUTH_LOOK && process.env.YOUTH_LOOK.indexOf('&') > -1) {
+    } 
+    if (process.env.YOUTH_LOOK && process.env.YOUTH_LOOK.indexOf('&') > -1) {
       LookBody = process.env.YOUTH_LOOK.split('&');
     } else {
       LookBody = [process.env.YOUTH_LOOK]
