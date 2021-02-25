@@ -47,7 +47,7 @@ if (!$.isNode() && !lookbodys.indexOf("&") == -1) {
     } else {
       StartBody = [process.env.YOUTH_START]
     };
-    if (process.env.YOUTH_LOOK && process.env.YOUTH_LOOK.indexOf('&') > -1) {
+    else if (process.env.YOUTH_LOOK && process.env.YOUTH_LOOK.indexOf('&') > -1) {
       LookBody = process.env.YOUTH_LOOK.split('&');
     } else {
       LookBody = [process.env.YOUTH_LOOK]
