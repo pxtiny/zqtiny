@@ -195,12 +195,20 @@ function lookEnd() {
 }
 function gainHost(api,body) {
   return {
-    url: 'https://ios.baertt.com/v5/'+api,
-    headers: {
-      'User-Agent': 'KDApp/1.7.8 (iPhone; iOS 14.0; Scale/3.00)',
-      'Host': 'ios.baertt.com',
-      'Content-Type': 'application/x-www-form-urlencoded'
-    },
+    url: 'https://kandian.youth.cn/v5/'+api,
+  headers: {
+             'access':'WIFI',
+            'os-api': '26',
+            'device-platform': 'android',
+            'openudid': '83bcb1d7cab0195e',
+            'app-version': '2.4.3',
+            'Content-Type': 'application/x-www-form-urlencoded',
+            'Content-Length': '1549',
+            'Host': 'kandian.youth.cn',
+            'Connection': 'Keep-Alive',
+            'Accept-Encoding': 'gzip',
+            'User-Agent': 'okhttp/3.12.2'
+            },
    body: body
   }
 }
