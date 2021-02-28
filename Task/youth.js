@@ -147,7 +147,7 @@ function kdHost(api, body) {
             'Accept-Encoding': 'gzip, deflate, br',
             'Referer': 'https://kd.youth.cn/h5/20190301taskcenter/240/index.html?' + cookie,
             'Host': 'kd.youth.cn',
-            'User-Agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 14_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148',
+            'User-Agent': 'Mozilla/5.0 (Linux; Android 10; GLK-AL00 Build/HUAWEIGLK-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/78.0.3904.108 Mobile Safari/537.36',
             'X-Requested-With': 'XMLHttpRequest'
         },
         body: body,
