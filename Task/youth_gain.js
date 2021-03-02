@@ -178,9 +178,10 @@ function lookStart() {
     $.post(gainHost('Nameless/adlickstart.json',lookbody), async(error, resp, data) =>{
        startlk = JSON.parse(data);
       if (startlk.success == false) {
-        smbody = $.getdata('youth_start').replace(lookbody+"&","");
-        $.setdata(smbody,'youth_start');
-        $.log(startlk.message+"已自动删除")
+//         smbody = $.getdata('youth_start').replace(lookbody+"&","");
+//         $.setdata(smbody,'youth_start');
+//         $.log(startlk.message+"已自动删除")
+           $.log("本条错误")
       } else {
          comstate = startlk.items.comtele_state;
       if (comstate == 0) {
