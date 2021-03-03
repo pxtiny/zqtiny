@@ -183,8 +183,8 @@ function lookStart() {
        startlk = JSON.parse(data);
       if (startlk.success == false) {
          smbody = $.getdata('youth_start').replace(lookbody+"&","");
-//         $.setdata(smbody,'youth_start');
-//         $.log(startlk.message+"已自动删除")
+         $.setdata(smbody,'youth_start');
+         $.log(startlk.message+"已自动删除")
            $.log("本条错误")
       } else {
          comstate = startlk.items.comtele_state;
